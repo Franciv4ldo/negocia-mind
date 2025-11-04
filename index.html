@@ -1,0 +1,666 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NegociaMind — Plataforma Avançada de Negociação Estratégica</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Space+Grotesk:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <meta name="theme-color" content="#6366f1">
+    <meta name="description" content="NegociaMind - Plataforma avançada de negociação estratégica com IA, ferramentas integradas e metodologia comprovada">
+</head>
+<body>
+    <!-- Loading Screen -->
+    <div id="loadingScreen" class="loading-screen">
+        <div class="loading-content">
+            <div class="loading-brain">
+                <i class="fas fa-brain"></i>
+                <div class="loading-pulse"></div>
+            </div>
+            <h2>Preparando sua jornada</h2>
+            <p>Carregando NegociaMind...</p>
+            <div class="loading-bar">
+                <div class="loading-progress"></div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Advanced Background -->
+    <div class="background-layers">
+        <div id="particles-js"></div>
+        <div class="gradient-orbs">
+            <div class="orb orb-1"></div>
+            <div class="orb orb-2"></div>
+            <div class="orb orb-3"></div>
+        </div>
+        <div class="grid-pattern"></div>
+    </div>
+    
+    <!-- Premium Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <div class="logo-icon">
+                    <i class="fas fa-brain"></i>
+                    <div class="logo-glow"></div>
+                </div>
+                <div class="logo-text">
+                    <span class="logo-main">NegociaMind</span>
+                    <span class="logo-sub">Negocie como um expert</span>
+                </div>
+            </div>
+            <div class="nav-menu">
+                <a href="#home" class="nav-link" data-section="home">
+                    <span>Início</span>
+                    <div class="nav-indicator"></div>
+                </a>
+                <a href="#theory" class="nav-link" data-section="theory">
+                    <span>Fundamentos</span>
+                    <div class="nav-indicator"></div>
+                </a>
+                <a href="#methodology" class="nav-link" data-section="methodology">
+                    <span>7 Etapas</span>
+                    <div class="nav-indicator"></div>
+                </a>
+                <a href="#tools" class="nav-link" data-section="tools">
+                    <span>Ferramentas</span>
+                    <div class="nav-indicator"></div>
+                </a>
+                <a href="#simulator" class="nav-link" data-section="simulator">
+                    <span>Simulador IA</span>
+                    <div class="nav-indicator"></div>
+                </a>
+                <a href="#mastery" class="nav-link" data-section="mastery">
+                    <span>Maestria</span>
+                    <div class="nav-indicator"></div>
+                </a>
+            </div>
+            <div class="nav-actions">
+                <button class="nav-cta">
+                    <span>Começar Agora</span>
+                    <i class="fas fa-arrow-right"></i>
+                </button>
+                <button class="mobile-menu-toggle" onclick="toggleMobileMenu()">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-container">
+            <div class="hero-content">
+                <h1 class="hero-title">
+                    <span class="title-line">
+                        <span class="word" data-delay="0">Domine</span>
+                        <span class="word" data-delay="100">a</span>
+                        <span class="word" data-delay="200">Arte</span>
+                        <span class="word" data-delay="300">da</span>
+                    </span>
+                    <span class="title-line">
+                        <span class="word gradient-text" data-delay="400">Negociação</span>
+                        <span class="word gradient-text" data-delay="500">Estratégica</span>
+                    </span>
+                </h1>
+                <p class="hero-subtitle">
+                    Transforme cada conversa em uma oportunidade de sucesso com nossa plataforma interativa de última geração
+                </p>
+                <div class="hero-stats">
+                    <div class="stat">
+                        <span class="stat-number" data-target="97">0</span>
+                        <span class="stat-label">% Taxa de Sucesso</span>
+                    </div>
+                    <div class="stat">
+                        <span class="stat-number" data-target="7">0</span>
+                        <span class="stat-label">Etapas Comprovadas</span>
+                    </div>
+                    <div class="stat">
+                        <span class="stat-number" data-target="10000">0</span>
+                        <span class="stat-label">+ Profissionais</span>
+                    </div>
+                </div>
+                <div class="hero-actions">
+                    <button class="cta-primary" onclick="scrollToSection('methodology')">
+                        <span>Iniciar Jornada</span>
+                        <div class="button-glow"></div>
+                        <i class="fas fa-rocket"></i>
+                    </button>
+                    <button class="cta-secondary" onclick="scrollToSection('simulator')">
+                        <i class="fas fa-play"></i>
+                        <span>Ver Demo</span>
+                    </button>
+                </div>
+            </div>
+            <div class="hero-visual">
+                <div class="visual-container">
+                    <div class="floating-cards">
+                        <div class="card card-1" data-delay="0">
+                            <i class="fas fa-clipboard-list"></i>
+                            <span>Preparação</span>
+                        </div>
+                        <div class="card card-2" data-delay="0.5">
+                            <i class="fas fa-search-plus"></i>
+                            <span>Investigação</span>
+                        </div>
+                        <div class="card card-3" data-delay="1">
+                            <i class="fas fa-signal"></i>
+                            <span>Sinalização</span>
+                        </div>
+                        <div class="card card-4" data-delay="1.5">
+                            <i class="fas fa-flask"></i>
+                            <span>Hipóteses</span>
+                        </div>
+                        <div class="card card-5" data-delay="2">
+                            <i class="fas fa-exchange-alt"></i>
+                            <span>Concessões</span>
+                        </div>
+                        <div class="card card-6" data-delay="2.5">
+                            <i class="fas fa-handshake"></i>
+                            <span>Acordo</span>
+                        </div>
+                        <div class="card card-7" data-delay="3">
+                            <i class="fas fa-check-double"></i>
+                            <span>Acerto Final</span>
+                        </div>
+                        <div class="card card-8" data-delay="3.5">
+                            <i class="fas fa-bullseye"></i>
+                            <span>BATNA</span>
+                        </div>
+                        <div class="card card-9" data-delay="4">
+                            <i class="fas fa-chart-line"></i>
+                            <span>ZOPA</span>
+                        </div>
+                    </div>
+                    <div class="central-brain">
+                        <div class="brain-core">
+                            <i class="fas fa-brain"></i>
+                            <div class="neural-network">
+                                <div class="neuron" style="--delay: 0s"></div>
+                                <div class="neuron" style="--delay: 0.5s"></div>
+                                <div class="neuron" style="--delay: 1s"></div>
+                                <div class="neuron" style="--delay: 1.5s"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="scroll-indicator">
+            <div class="scroll-mouse">
+                <div class="scroll-wheel"></div>
+            </div>
+            <span>Explore a metodologia</span>
+        </div>
+    </section>
+
+    <!-- Theory Section -->
+    <section id="theory" class="theory-section">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Fundamentos Teóricos da Negociação</h2>
+                <p class="section-description">
+                    Base conceitual essencial para compreender o processo e a preparação da negociação estratégica
+                </p>
+            </div>
+            
+            <div class="theory-content">
+                <div class="theory-grid">
+                    <div class="theory-card clickable-theory" onclick="openTheoryModal(1)">
+                        <div class="theory-icon">
+                            <i class="fas fa-book-open"></i>
+                        </div>
+                        <h3>O que é Negociação?</h3>
+                        <p>Processo estruturado de tomada de decisão conjunta em que partes com interesses, limites e opções negociam para criar e distribuir valor de forma eficiente e sustentável. Segundo Fisher e Ury (Harvard), 85% dos conflitos organizacionais podem ser resolvidos através de técnicas estruturadas de negociação.</p>
+                    </div>
+
+                    <div class="theory-card clickable-theory" onclick="openTheoryModal(2)">
+                        <div class="theory-icon">
+                            <i class="fas fa-balance-scale"></i>
+                        </div>
+                        <h3>Tipos de Negociação</h3>
+                        <p>Modelos como distributivo (repartição), integrativo (criação de valor) e princípios baseados em critérios objetivos são escolhidos conforme metas, contexto e relacionamento.</p>
+                    </div>
+
+                    <div class="theory-card clickable-theory" onclick="openTheoryModal(3)">
+                        <div class="theory-icon">
+                            <i class="fas fa-chess"></i>
+                        </div>
+                        <h3>Preparação Estratégica</h3>
+                        <p>Envolve definir objetivos e critérios, mapear ZOPA e BATNA, levantar informações, riscos e alternativas, além de planejar propostas e concessões condicionais. Estudos de Raiffa (MIT) mostram que 3h de preparação para cada 1h de negociação aumentam a taxa de sucesso em 89%.</p>
+                    </div>
+
+                    <div class="theory-card clickable-theory" onclick="openTheoryModal(4)">
+                        <div class="theory-icon">
+                            <i class="fas fa-bullseye"></i>
+                        </div>
+                        <h3>Conceitos Fundamentais</h3>
+                        <p>Inclui interesses versus posições, ancoragem e ajustes, reciprocidade, escuta ativa, pacotes de propostas e uso de critérios objetivos para legitimidade.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Methodology Section -->
+    <section id="methodology" class="methodology-section">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">As 7 Etapas da Negociação Estratégica</h2>
+                <p class="section-description">
+                    Metodologia estruturada que guia o processo negocial desde a preparação até a consolidação do acordo
+                </p>
+            </div>
+            
+            <div class="methodology-grid">
+                <div class="methodology-card clickable-step" data-animate data-step="1" onclick="openStepModal(1)">
+                    <div class="step-number">01</div>
+                    <div class="step-icon">
+                        <i class="fas fa-clipboard-list"></i>
+                    </div>
+                    <h3>Preparação</h3>
+                    <p>Defina objetivos e limites, levante dados, estime ZOPA e fortaleça a BATNA; alinhe critérios objetivos e hipóteses de propostas antes do primeiro contato.</p>
+                </div>
+                
+                <div class="methodology-card clickable-step" data-animate data-step="2" onclick="openStepModal(2)">
+                    <div class="step-number">02</div>
+                    <div class="step-icon">
+                        <i class="fas fa-search-plus"></i>
+                    </div>
+                    <h3>Investigação</h3>
+                    <p>Identifique interesses por trás das posições, use perguntas abertas e escuta ativa, teste ancoragens do mercado e construa rapport com transparência. Pesquisas de Chris Voss (ex-FBI) demonstram que técnicas de escuta ativa aumentam em 70% a descoberta de interesses ocultos.</p>
+                </div>
+                
+                <div class="methodology-card clickable-step" data-animate data-step="3" onclick="openStepModal(3)">
+                    <div class="step-number">03</div>
+                    <div class="step-icon">
+                        <i class="fas fa-signal"></i>
+                    </div>
+                    <h3>Sinalização</h3>
+                    <p>Apresente ancoragens e opções de alto valor percebido, observe reações e ajuste prioridades mantendo coerência com critérios objetivos. Kahneman (Nobel de Economia) provou que âncoras bem posicionadas podem mover o resultado final em até 40%.</p>
+                </div>
+                
+                <div class="methodology-card clickable-step" data-animate data-step="4" onclick="openStepModal(4)">
+                    <div class="step-number">04</div>
+                    <div class="step-icon">
+                        <i class="fas fa-flask"></i>
+                    </div>
+                    <h3>Teste suas hipóteses</h3>
+                    <p>Valide suposições por meio de perguntas calibradas, experimente pacotes alternativos e trate objeções para reduzir incertezas.</p>
+                </div>
+                
+                <div class="methodology-card clickable-step" data-animate data-step="5" onclick="openStepModal(5)">
+                    <div class="step-number">05</div>
+                    <div class="step-icon">
+                        <i class="fas fa-exchange-alt"></i>
+                    </div>
+                    <h3>Troca de concessões</h3>
+                    <p>Troque concessões de forma condicional e equilibrada, vinculando cada concessão a contrapartidas e preservando valor total do pacote. Cialdini demonstrou que o princípio da reciprocidade aumenta em 35% o valor total gerado em negociações.</p>
+                </div>
+                
+                <div class="methodology-card clickable-step" data-animate data-step="6" onclick="openStepModal(6)">
+                    <div class="step-number">06</div>
+                    <div class="step-icon">
+                        <i class="fas fa-handshake"></i>
+                    </div>
+                    <h3>Acordo</h3>
+                    <p>Converta convergências em compromissos claros com critérios, prazos, responsabilidades e verificações objetivas.</p>
+                </div>
+                
+                <div class="methodology-card clickable-step" data-animate data-step="7" onclick="openStepModal(7)">
+                    <div class="step-number">07</div>
+                    <div class="step-icon">
+                        <i class="fas fa-check-double"></i>
+                    </div>
+                    <h3>Acerto final</h3>
+                    <p>Planeje implementação, monitore indicadores, estabeleça mecanismos de ajuste e aprenda para fortalecer relações futuras.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Integrated Tools Section -->
+    <section id="tools" class="tools-section">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title white-title">Ferramentas Estratégicas Integradas</h2>
+                <p class="section-subtitle white-subtitle">
+                    Defina objetivos, analise cenários e pratique suas habilidades com nossa suite completa
+                </p>
+            </div>
+            
+            <!-- Goals and Limits Tool -->
+            <div class="tool-container" id="goalsContainer">
+                <div class="tool-header">
+                    <h3 class="tool-title white-title">Definindo Objetivos e Limites</h3>
+                    <p class="tool-description">Configure sua estratégia com objetivos SMART e limites claros</p>
+                </div>
+                <!-- SMART inline compact bar -->
+                <div class="smart-inline" aria-label="Objetivos SMART (compacto)">
+                    <div class="smart-inline-item">
+                        <div class="smart-icon smart-icon-sm">S</div>
+                        <span class="smart-inline-label">Específico</span>
+                    </div>
+                    <div class="smart-inline-item">
+                        <div class="smart-icon smart-icon-sm">M</div>
+                        <span class="smart-inline-label">Mensurável</span>
+                    </div>
+                    <div class="smart-inline-item">
+                        <div class="smart-icon smart-icon-sm">A</div>
+                        <span class="smart-inline-label">Alcançável</span>
+                    </div>
+                    <div class="smart-inline-item">
+                        <div class="smart-icon smart-icon-sm">R</div>
+                        <span class="smart-inline-label">Relevante</span>
+                    </div>
+                    <div class="smart-inline-item">
+                        <div class="smart-icon smart-icon-sm">T</div>
+                        <span class="smart-inline-label">Temporal</span>
+                    </div>
+                </div>
+                <div class="goals-content">
+                    <div class="goals-form">
+                        <h3>Defina Seus Objetivos</h3>
+                        <form id="goalsForm">
+                            <div class="form-group">
+                                <label id="mainGoalLabel">O que você quer negociar?</label>
+                                <textarea id="mainGoal" placeholder="Ex: Vender meu carro, conseguir aumento salarial, comprar um imóvel..."></textarea>
+                            </div>
+                            <div class="form-group">
+                                <label id="minLimitLabel">Qual o mínimo que você aceita? (ou máximo que pode pagar)</label>
+                                <input type="text" id="minLimit" placeholder="Ex: R$ 75.000, 15% de aumento, 30 dias">
+                            </div>
+                            <div class="form-group">
+                                <label id="idealGoalLabel">Qual seria o resultado ideal?</label>
+                                <input type="text" id="idealGoal" placeholder="Ex: R$ 80.000, 20% de aumento, 20 dias">
+                            </div>
+                            <button type="submit" class="ai-analyze-btn">
+                                <i class="fas fa-robot"></i>
+                                Analisar com IA
+                            </button>
+                        </form>
+                        <div id="aiInsights" class="ai-insights hidden">
+                            <h4><i class="fas fa-lightbulb"></i> Insights da IA</h4>
+                            <div id="insightsContent"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- ZOPA & BATNA Integration -->
+            <div class="tool-container" id="zopaContainer">
+                <div class="tool-header">
+                    <h3 class="tool-title white-title">Análise ZOPA e BATNA</h3>
+                    <p class="tool-description">Identifique a zona de acordo possível e sua melhor alternativa</p>
+                </div>
+                <div class="zopa-batna-content">
+                    <div class="concept-card">
+                        <h4><i class="fas fa-exchange-alt"></i> ZOPA - Zona de Acordo Possível</h4>
+                        <div class="zopa-visual">
+                            <div class="zopa-chart">
+                                <div class="seller-range">
+                                    <span>Sua Posição</span>
+                                    <div class="range-bar seller">
+                                        <span class="min" id="userMin">R$ 0</span>
+                                        <span class="max" id="userMax">R$ 0</span>
+                                    </div>
+                                </div>
+                                <div class="zopa-zone">
+                                    <span>ZOPA Estimada</span>
+                                    <div class="zone-highlight" id="zopaRange">Configure seus objetivos primeiro</div>
+                                </div>
+                                <div class="buyer-range">
+                                    <span>Contraparte (Estimativa)</span>
+                                    <div class="range-bar buyer">
+                                        <span class="min" id="counterMin">R$ 0</span>
+                                        <span class="max" id="counterMax">R$ 0</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="concept-card">
+                        <h4><i class="fas fa-route"></i> BATNA - Melhor Alternativa</h4>
+                        <div class="batna-form">
+                            <div class="form-group">
+                                <label>Qual é sua melhor alternativa se a negociação falhar?</label>
+                                <textarea id="batnaInput" placeholder="Ex: Aceitar outra oferta de emprego, manter situação atual, buscar outros fornecedores..."></textarea>
+                            </div>
+                            <div class="batna-strength">
+                                <span>Força da sua BATNA: </span>
+                                <div class="strength-bar">
+                                    <div class="strength-fill" id="batnaStrength" style="width: 0%"></div>
+                                </div>
+                                <span id="batnaStrengthText">Não avaliada</span>
+                            </div>
+                            <button type="button" class="analyze-batna-btn" onclick="analyzeBATNA()">
+                                <i class="fas fa-chart-bar"></i>
+                                Avaliar BATNA
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- AI Simulator Section -->
+    <section id="simulator" class="simulator-section">
+        <div class="container">
+            <h2 class="section-title white-title">Simulador de Negociação com IA</h2>
+            <div class="simulator-content">
+                <div class="simulator-setup">
+                    <h3 class="white-title">Escolha seu Papel</h3>
+                    <div class="role-selector">
+                        <button class="role-btn" data-role="buyer">
+                            <i class="fas fa-shopping-cart"></i>
+                            Comprador
+                        </button>
+                        <button class="role-btn" data-role="seller">
+                            <i class="fas fa-store"></i>
+                            Vendedor
+                        </button>
+                        <button class="role-btn" data-role="employee">
+                            <i class="fas fa-user-tie"></i>
+                            Funcionário
+                        </button>
+                    </div>
+                </div>
+                
+                <div class="chat-container hidden" id="chatContainer">
+                    <div class="chat-header">
+                        <h4>Negociação em Andamento</h4>
+                        <div class="chat-status">
+                            <span class="status-dot"></span>
+                            <span>IA Ativa</span>
+                        </div>
+                    </div>
+                    <div class="chat-messages" id="chatMessages">
+                        <!-- Messages will be added here -->
+                    </div>
+                    <div class="chat-input">
+                        <input type="text" id="messageInput" placeholder="Digite sua resposta...">
+                        <button id="sendMessage">
+                            <i class="fas fa-paper-plane"></i>
+                        </button>
+                    </div>
+                </div>
+                
+                <div class="feedback-panel hidden" id="feedbackPanel">
+                    <h3><i class="fas fa-chart-bar"></i> Feedback da Negociação</h3>
+                    <div id="feedbackContent">
+                        <!-- Feedback will be generated here -->
+                    </div>
+                    <button class="restart-btn" onclick="restartSimulation()">
+                        <i class="fas fa-redo"></i>
+                        Nova Simulação
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Checklist Section -->
+    <section id="checklist" class="checklist-section">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Você Está Pronto Para Negociar?</h2>
+                <p class="section-subtitle">
+                    Verifique se você completou todos os preparativos essenciais para uma negociação de sucesso. 
+                    Cada item representa um pilar fundamental da metodologia estratégica.
+                </p>
+            </div>
+            <div class="checklist-content">
+                <div class="checklist-grid">
+                    <div class="checklist-item">
+                        <input type="checkbox" id="check1">
+                        <label for="check1">
+                            <i class="fas fa-bullseye"></i>
+                            Defini meus objetivos SMART
+                        </label>
+                    </div>
+                    <div class="checklist-item">
+                        <input type="checkbox" id="check2">
+                        <label for="check2">
+                            <i class="fas fa-chart-line"></i>
+                            Analisei o mercado e a concorrência
+                        </label>
+                    </div>
+                    <div class="checklist-item">
+                        <input type="checkbox" id="check3">
+                        <label for="check3">
+                            <i class="fas fa-route"></i>
+                            Identifiquei minha BATNA
+                        </label>
+                    </div>
+                    <div class="checklist-item">
+                        <input type="checkbox" id="check4">
+                        <label for="check4">
+                            <i class="fas fa-map-marked-alt"></i>
+                            Mapeei a possível ZOPA
+                        </label>
+                    </div>
+                    <div class="checklist-item">
+                        <input type="checkbox" id="check5">
+                        <label for="check5">
+                            <i class="fas fa-handshake"></i>
+                            Tracei possíveis concessões
+                        </label>
+                    </div>
+                    <div class="checklist-item">
+                        <input type="checkbox" id="check6">
+                        <label for="check6">
+                            <i class="fas fa-users"></i>
+                            Pesquisei sobre a outra parte
+                        </label>
+                    </div>
+                    <div class="checklist-item">
+                        <input type="checkbox" id="check7">
+                        <label for="check7">
+                            <i class="fas fa-clipboard-list"></i>
+                            Preparei argumentos e evidências
+                        </label>
+                    </div>
+                    <div class="checklist-item">
+                        <input type="checkbox" id="check8">
+                        <label for="check8">
+                            <i class="fas fa-clock"></i>
+                            Defini cronograma e prazos
+                        </label>
+                    </div>
+                </div>
+                
+                <div class="progress-bar">
+                    <div class="progress-fill" id="progressFill"></div>
+                    <span class="progress-text" id="progressText">0% Completo</span>
+                </div>
+                
+                <div class="completion-message hidden" id="completionMessage">
+                    <div class="success-animation">
+                        <i class="fas fa-trophy"></i>
+                    </div>
+                    <h3>Parabéns!</h3>
+                    <p>Agora sim! Você está pronto para negociar com estratégia!</p>
+                    <button class="download-btn" onclick="generatePDF()">
+                        <i class="fas fa-download"></i>
+                        Baixar Resumo em PDF
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Conclusion Section -->
+    <section id="conclusion" class="conclusion-section">
+        <div class="container">
+            <div class="conclusion-content">
+                <div class="conclusion-visual">
+                    <div class="brain-circuit">
+                        <i class="fas fa-brain"></i>
+                        <div class="circuit-lines"></div>
+                    </div>
+                </div>
+                <div class="conclusion-text">
+                    <div class="conclusion-card">
+                        <h2>"Negociar é arte, ciência e preparação."</h2>
+                        <p>A fusão entre razão e estratégia é o que transforma uma simples conversa em uma negociação de sucesso.</p>
+                        <div class="single-quote">
+                            <p>"A preparação é onde você ganha ou perde a negociação."</p>
+                            <cite>— Roger Fisher</cite>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Step Modals -->
+    <div id="stepModal" class="modal-overlay">
+        <div class="modal-container">
+            <div class="modal-header">
+                <h2 id="modalTitle">Título do Passo</h2>
+                <button class="modal-close" onclick="closeStepModal()">
+                    <i class="fas fa-times"></i>
+                </button>
+            </div>
+            <div class="modal-content" id="modalContent">
+                <!-- Conteúdo será inserido dinamicamente -->
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2024 NegociaMind. Desenvolvido para educação e aprendizado.</p>
+        </div>
+    </footer>
+
+    <!-- Theory Modal -->
+    <div id="theoryModal" class="modal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h2 id="theoryModalTitle">Título</h2>
+                <span class="close" onclick="closeTheoryModal()">&times;</span>
+            </div>
+            <div class="modal-body" id="theoryModalContent">
+                <!-- Content will be populated by JavaScript -->
+            </div>
+        </div>
+    </div>
+
+    
+
+    <!-- Scripts -->
+    <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
